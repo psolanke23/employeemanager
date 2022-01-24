@@ -34,9 +34,9 @@ public class EmployeeService {
 		return employeeRepo.save(employee);
 	}
 	
-	public void deleteEmployee(Long id) {
-	 employeeRepo.deleteEmployeeId(id);
-	}
+//	public void deleteEmployee(Long id) {
+//	 employeeRepo.deleteEmployeeId(id);
+//	}
 	
 	public Employee findEmployeeById(Long id) {
 	return employeeRepo.findEmployeeById(id).orElseThrow(()->new UserNotFoundException("user from id "+id+" was not Found"));

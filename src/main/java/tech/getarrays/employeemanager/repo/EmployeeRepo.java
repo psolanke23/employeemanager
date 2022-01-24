@@ -9,6 +9,6 @@ import tech.getarrays.employeemanager.model.Employee;
 
 @Repository
 public interface EmployeeRepo extends JpaRepository<Employee,Long> {
-	 Optional deleteEmployeeId(Long id);
+//	 Optional deleteEmployeeId(Long id);
 	 Optional<Employee> findEmployeeById(Long id);
 }
